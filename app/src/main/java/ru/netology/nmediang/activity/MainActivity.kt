@@ -61,14 +61,10 @@ class MainActivity : AppCompatActivity() {
                 )
                 if (post.likedByMe) post.likesSum++ else post.likesSum--
                 likesNumber.text = displayNumbers(post.likesSum)
-
-                Log.d("Tag", "done_Like")
-
             }
 
             share?.setOnClickListener {
                 shareNumber.text = displayNumbers(post.sharedSum++)
-                Log.d("Tag", "done_Repost")
             }
 
 
